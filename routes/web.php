@@ -5,6 +5,8 @@ use App\Models\Employee;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\UserUpdateController;
 use App\Http\Controllers\Users;
+use App\Http\Controllers\collections;
+
 
 
 
@@ -38,6 +40,9 @@ Route::post('edit/{id}',[userController::class,'edit']);
 Route::get('delete/{id}',[userController::class,'destroy']);
 Route::get('/usermany',[Users::class,'show']);
 Route::get('/userone',[Users::class,'shows']);
+Route::get('/Collections',[collections::class,'index']);
+
+
 
 
 

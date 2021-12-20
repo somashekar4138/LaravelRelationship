@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Cmp extends Model
 {
     use HasFactory;
+    
     protected $table = 'company';
 }

@@ -9,7 +9,7 @@ class Users extends Controller
 {
     //
     public function show() {
-        return usrs::find(2)->show;
+        return usrs::find(1)->show;
         }
         public function shows() {
             return usrs::find(2)->shows;
